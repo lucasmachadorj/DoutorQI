@@ -10,15 +10,19 @@ import android.widget.TextView;
  */
 public class PerfilFragment extends Fragment {
     // Store instance variables
-    private String title;
-    private int page;
+
+    //private String title;
+    //private int page;
+
+    public static final String ARG_PAGE = "ARG_PAGE";
+
+    private int mPage;
 
     // newInstance constructor for creating fragment with arguments
-    public static PerfilFragment newInstance(int page, String title) {
+    public static PerfilFragment newInstance(int page) {
         PerfilFragment fragmentPerfil = new PerfilFragment();
         Bundle args = new Bundle();
-        args.putInt("someInt", page);
-        args.putString("someTitle", title);
+        args.putInt(ARG_PAGE, page);
         fragmentPerfil.setArguments(args);
         return fragmentPerfil;
     }
@@ -27,8 +31,7 @@ public class PerfilFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        page = getArguments().getInt("someInt", 0);
-        title = getArguments().getString("someTitle");
+        mPage = getArguments().getInt(ARG_PAGE);
     }
 
     // Inflate the view for the fragment based on layout XML
@@ -36,8 +39,8 @@ public class PerfilFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_perfil, container, false);
-        /*TextView tvLabel = (TextView) view.findViewById(R.id.tvLabel);
-        tvLabel.setText(page + " -- " + title);*/
+        TextView tvLabel = (TextView) view;
+        tvLabel.setText("Fragment #" + mPage);
         return view;
     }
 }
