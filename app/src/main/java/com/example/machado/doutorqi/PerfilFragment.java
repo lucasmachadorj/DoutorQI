@@ -39,8 +39,6 @@ public class PerfilFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_perfil, container, false);
-        TextView tvLabel = (TextView) view;
-        tvLabel.setText("Fragment #" + mPage);
         return view;
     }
 }
