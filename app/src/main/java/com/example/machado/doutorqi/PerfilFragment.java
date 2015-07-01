@@ -3,7 +3,7 @@ package com.example.machado.doutorqi;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.*;
-import android.widget.TextView;
+import android.widget.EditText;
 
 /**
  * Created by igor on 29/06/15.
