@@ -27,7 +27,12 @@ public class MyPagerAdapter extends FragmentPagerAdapter{
 
     @Override
     public Fragment getItem(int position){
-        return PerfilFragment.newInstance(position + 1);
+
+        if(position==0)
+            return PerfilFragment.newInstance();
+
+        else
+            return SearchFragment.newInstance();
     }
 
     @Override

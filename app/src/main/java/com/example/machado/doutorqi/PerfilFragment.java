@@ -14,15 +14,12 @@ public class PerfilFragment extends Fragment {
     //private String title;
     //private int page;
 
-    public static final String ARG_PAGE = "ARG_PAGE";
 
-    private int mPage;
 
     // newInstance constructor for creating fragment with arguments
-    public static PerfilFragment newInstance(int page) {
+    public static PerfilFragment newInstance() {
         PerfilFragment fragmentPerfil = new PerfilFragment();
         Bundle args = new Bundle();
-        args.putInt(ARG_PAGE, page);
         fragmentPerfil.setArguments(args);
         return fragmentPerfil;
     }
@@ -31,7 +28,6 @@ public class PerfilFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPage = getArguments().getInt(ARG_PAGE);
     }
 
     // Inflate the view for the fragment based on layout XML

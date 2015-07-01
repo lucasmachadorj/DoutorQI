@@ -11,16 +11,11 @@ import android.widget.TextView;
  * Created by igor on 29/06/15.
  */
 public class SearchFragment extends Fragment {
-    // Store instance variables
-    private String title;
-    private int page;
 
     // newInstance constructor for creating fragment with arguments
-    public static SearchFragment newInstance(int page, String title) {
+    public static SearchFragment newInstance() {
         SearchFragment fragmentSearch = new SearchFragment();
         Bundle args = new Bundle();
-        args.putInt("someInt", page);
-        args.putString("someTitle", title);
         fragmentSearch.setArguments(args);
         return fragmentSearch;
     }
@@ -29,8 +24,6 @@ public class SearchFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        page = getArguments().getInt("someInt", 0);
-        title = getArguments().getString("someTitle");
     }
 
     // Inflate the view for the fragment based on layout XML
