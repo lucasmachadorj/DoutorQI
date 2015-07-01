@@ -8,5 +8,6 @@
     <string name="medico">Médico</string>
     <string name="paciente">Paciente</string>
     <string name="title_activity_pacient">PacientActivity</string>
+    <string name="title_activity_update_doctor">UpdateDoctorActivity</string>
 
 </resources>

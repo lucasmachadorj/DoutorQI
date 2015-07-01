@@ -1,5 +1,6 @@
 package com.example.machado.doutorqi;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -7,11 +8,18 @@ import android.support.v4.view.ViewPager;
 
 
 import android.os.Bundle;
+import android.view.View;
 
 
 public class DoctorActivity extends FragmentActivity {
 
     FragmentPagerAdapter adapterViewPager;
+
+    public void updateDoctor(View v){
+        Intent intent = new Intent(this, UpdateDoctorActivity.class);
+        startActivity(intent);
+
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

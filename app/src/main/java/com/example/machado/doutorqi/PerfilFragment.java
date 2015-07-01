@@ -1,18 +1,14 @@
 package com.example.machado.doutorqi;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.*;
-import android.widget.EditText;
 
 /**
  * Created by igor on 29/06/15.
  */
 public class PerfilFragment extends Fragment {
-    // Store instance variables
-
-    //private String title;
-    //private int page;
 
 
 
