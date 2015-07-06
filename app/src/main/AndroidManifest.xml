@@ -28,6 +28,10 @@
             android:name=".UpdateDoctorActivity"
             android:label="@string/title_activity_update_doctor" >
         </activity>
+        <activity
+            android:name=".DoctorsListActivity"
+            android:label="@string/title_activity_doctors_list" >
+        </activity>
     </application>
 
 </manifest>

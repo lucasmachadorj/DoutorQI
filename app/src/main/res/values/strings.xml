@@ -20,5 +20,8 @@
         <item>Fusex</item>
         <item>Unimed</item>
     </string-array>
+    <string name="title_activity_doctors_list">DoctorsListActivity</string>
+
+    <string name="hello_world">Hello world!</string>
 
 </resources>
